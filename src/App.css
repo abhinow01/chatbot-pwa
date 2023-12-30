@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: #AA076B;
+    background: -webkit-linear-gradient(to right, #61045F, #AA076B);
+    background: linear-gradient(to right, #61045F, #AA076B);
+  }
+
+  .chatbot-card {
+    background-color: rgba(170, 7, 107, 0.9); /* Translucent background color */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Styles for the input field */
+  .Input {
+    background-color: rgba(255, 255, 255, 0.5); /* Translucent white */
+    color: #fff; /* Text color */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .Input::placeholder {
+    color: #fff; /* Placeholder text color */
+  }
+  
+  /* Styles for the audio player */
+  .voice-note-card {
+    background-color: rgba(255, 255, 255, 0.5); /* Translucent white */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .voice-note-card audio {
+    width: 100%;
+    background-color: transparent; /* Remove the default background */
+  }
+  
+  .voice-note-card audio::-webkit-media-controls-panel {
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust media controls background */
+    border-radius: 5px;
+  }
+  
+  .voice-note-card audio::-webkit-media-controls-play-button,
+  .voice-note-card audio::-webkit-media-controls-pause-button {
+    color: #fff; /* Change play and pause button color */
+  }
+  
+  .voice-note-card audio::-webkit-media-controls-current-time-display,
+  .voice-note-card audio::-webkit-media-controls-time-remaining-display {
+    color: #fff; /* Change time display color */
+  }
+
+  .text-blob-left {
+    background-color: #e0e0e0; /* Background color for the left text blob */
+    color: #333; /* Text color for the left text blob */
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    float: left; /* Align the left text blob to the left */
+    clear: both; /* Ensure no floating elements */
+  }
+  
+  .text-blob-right {
+    background-color: #2196F3; /* Background color for the right text blob */
+    color: #fff; /* Text color for the right text blob */
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    float: right; /* Align the right text blob to the right */
+    clear: both; /* Ensure no floating elements */
+  }
